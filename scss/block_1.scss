@@ -1,0 +1,31 @@
+.img-box {
+    width: 33%;    
+    .img-top {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+        border-radius: 50%;             
+    }     
+}
+
+.img-between-block {
+    margin-top: 60px;
+    text-align: center;    
+}
+
+.title-about { 
+    text-align: center;
+    margin-top: 60px;    
+}
+
+.title-link {
+    margin-bottom: 2.5em;
+    @include changeColor;
+    text-align: center;
+}
+
+.title-card-slider {
+    margin-top: 60px;
+}
+
+
