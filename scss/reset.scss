@@ -1,5 +1,14 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Roboto;
+    box-sizing: border-box;    
 }
+
+@mixin changeColor () {
+    color: $gold;
+    &:hover {         
+        color: $lgold;
+        text-decoration: none; 
+    }
+}
+
