@@ -1,29 +1,511 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">  
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-grid.css">    
-    <title>Tchibo</title>
-</head>
-<body>
-        <div class="container">
-                <div class="row justify-content-center">
-                    <div class="img-box col-lg-4 col-md-6 col-10" >
-                        <a href="#"><img class="img-top" src="images\tchibo-all.png" alt=""></a>
-                        <a href="#" class="title-link"><h2>КОФЕ</h2></a>
-                    </div>    
-                    <div class="img-box col-lg-4 col-md-6 col-10" >
-                        <a href="#"><img class="img-top" src="images\clothes.png" alt=""></a>
-                        <a href="#" class="title-link"><h2>ТОВАРЫ</h2></a>
-                    </div>           
-                    <div class="img-box col-lg-4 col-md-6 col-10 justify-content-center" >
-                        <a href="#"><img class="img-top" src="images\pie.png" alt=""></a>
-                       <a href="#" class="title-link"><h2>МЕНЮ</h2></a>
-                    </div>                   
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Tchibo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="images/tchibo.png">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="preloader">
+            <div class="preloader-area">
+            	<div class="preloader-box">
+            		<div class="preloader"></div>
+            	</div>
+            </div>
+        </div>
+        <section class="header-top-section">
+            <div class="container">
+                <div class="row">
+                    <div  class="col-md-6">
+                        <div class="header-top-content">
+                            <ul class="nav nav-pills navbar-left">
+                                <li><a href="#"><i class="pe-7s-call"></i><span> 996-555155155</span></a></li>
+                                <li><a href="#"><i class="pe-7s-mail"></i><span> info@tchibo.kg</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div  class="col-md-6">
+                        <div class="header-top-menu">
+                            <ul class="nav nav-pills navbar-right">
+                                <li><a href="#">Мой аккаунт</a></li>
+                                <li><a href="#">Моя Tchibo-карта</a></li>
+                                <li><a href="#"><i class="pe-7s-lock"></i> Логин/Регистрация</a></li>
+                           </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
+        <header class="header-section">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#"><img src="images/free-_logo.png" width="100" height="25"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Главная</a></li>
+                            <li><a href="#">Кофе</a></li>
+                            <li><a href="#">Товары</a></li>
+                            <li><a href="#">Tchibo-карта</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right cart-menu">
+                        <li><a href="#" class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><span> Ваш баланс &nbsp;</span> <span class="shoping-cart">0</span></a></li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="search-section">
+            <div class="container">
+                <div class="row subscribe-from">
+                    <div class="col-md-12">
+                        <form class="form-inline col-md-12 wow fadeInDown animated">
+                            <div class="form-group">
+                                <input type="email" class="form-control subscribe" id="email" placeholder="Search...">
+                                <button class="suscribe-btn" ><i class="pe-7s-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="slider-section">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators slider-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="images/123.jpg" height="600" alt="img">
+                        <div class="carousel-caption">
+                            <h2>TCHIBO-КАРТА</h2>
+                            <h3>Простая и безопасная <Span>оплата</Span></h3>
+                            <a href="#">Оформить карту</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/_DSC4220.jpg" height="600" alt="img">
+                        <div class="carousel-caption">
+                            <h2>TCHIBO-КАРТА</h2>
+                            <h3>Всегда удивительные <Span>преимущества</Span></h3>
+                            <a href="#">Оформить карту</a>
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <img src="images/12345.jpg" height="600" alt="img">
+                        <div class="carousel-caption">
+                            <h2>TCHIBO-КАРТА</h2>
+                            <h3>Цена со  <Span>скидкой</Span></h3>
+                            <a href="#">Оформить карту</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="pe-7s-angle-left glyphicon-chevron-left" aria-hidden="true"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="pe-7s-angle-right glyphicon-chevron-right" aria-hidden="true"></span>
+                </a>
+            </div>
+        </section>
+        <section class="new-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="titie-section wow fadeInDown animated ">
+                            <h1>Добро пожаловать в мир преимуществ Tchibo-Card.</h1>
+                            <h3>Наслаждайтесь многими эксклюзивными преимуществами с вашей новой Tchibo-Card. 
+                            Потому что отныне это значит для вас в Tchibo: покупки, коллекционирование, экономия!</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 wow fadeInLeft animated" data-wow-delay="0.2s">
+                        <div class="product-item">
+                            <img src="images/_DSC4157.jpg" class="img-responsive" width="255" height="322" alt="">
+                            <div class="product-title">
+                                <a href="#">
+                                    <h3>Кофемашинки</h3>
+                                    <span>5 %</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 wow fadeInLeft animated" data-wow-delay="0.4s">
+                        <div class="product-item">
+                            <img src="images/_DSC1953.jpg" class="img-responsive" width="255" height="322" alt="">
+                            <div class="product-title">
+                                <a href="#">
+                                    <h3>Одежда</h3>
+                                    <span>10 %</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 wow fadeInLeft animated" data-wow-delay="0.6s">
+                        <div class="product-item">
+                            <img src="images/_DSC2062.jpg" class="img-responsive" width="255" height="322" alt="">
+                            <div class="product-title">
+                                <a href="#">
+                                    <h3>Завтраки</h3>
+                                    <span>15 %</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 wow fadeInLeft animated" data-wow-delay="0.8s">
+                        <div class="product-item">
+                            <img src="images/_DSC4187.jpg" class="img-responsive" width="255" height="322" alt="">
+                            <div class="product-title">
+                                <a href="#">
+                                    <h3>Кофе</h3>
+                                    <span>10 %</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="logo-section">
+            <div class="container">
+                <div class="row">
+                    <img src="images/half_classic.png" width="100" height="100">
+                </div>
+            </div>
+        </section>
+        <section class="service-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="titie-section wow fadeInDown animated ">
+                            <h1>Ваши преимущества Tchibo-Card</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 wow fadeInRight animated" data-wow-delay="0.1s">
+                        <div class="service-item">
+                            <i class="pe-7s-cart"></i>
+                            <h3>Эксклюзивный заказ за неделю</h3>
+                            <p>Все владельцы Tchibo-Card могут сделать заказ за неделю до того, как все остальные клиенты из нового мира тем Tchibo онлайн.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 wow fadeInRight animated" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <i class="pe-7s-star"></i>
+                            <h3>Tchibo-Card цена со скидкой</h3>
+                            <p>Мы предлагаем всем владельцам Tchibo-Card тщательно отобранные статьи из наших тематических миров на особенно привлекательных условиях.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 wow fadeInRight animated" data-wow-delay="0.3s">
+                        <div class="service-item">
+                            <i class="pe-7s-mail"></i>
+                            <h3>Эксклюзивная новостная рассылка Tchibo-Card</h3>
+                            <p>Ежемесячный бюллетень информирует о новых предложениях, акциях и конкурсах.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 wow fadeInRight animated" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <i class="pe-7s-server"></i>
+                            <h3>5% ценовое преимущество на все капсулы Cafissimo</h3>
+                            <p>Любители кофе, которым принадлежит Tchibo-Card, получат скидку 5% на весь ассортимент капсул Cafissimo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 wow fadeInRight animated" data-wow-delay="0.1s">
+                        <div class="service-item">
+                            <i class="pe-7s-coffee"></i>
+                            <h3>Бесплатный любимый кофе</h3>
+                            <p>Вы получите кофейную марку за каждый купленный кофейный напиток в кафе-баре филиала. После 10 собранных марок кофе вы получите свой любимый кофе бесплатно.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 wow fadeInRight animated" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <i class="pe-7s-piggy"></i>
+                            <h3>Собирайте и выкупайте бобы лояльности</h3>
+                            <p>Каждый раз, когда вы делаете покупки в своем магазине Tchibo или на tchibo.de, вы получаете два боба лояльности стоимостью 1 цент каждый за каждый полный евро. По крайней мере, из 100 Бобов лояльности вы можете использовать их по отдельности.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 wow fadeInRight animated" data-wow-delay="0.3s">
+                        <div class="service-item">
+                            <i class="pe-7s-users"></i>
+                            <h3>Эксклюзивные преимущества в сообществе</h3>
+                            <p>В сообществе клиенты TchiboCard ожидают эксклюзивного тестирования продукта и захватывающего обмена с другими участниками и экспертами Tchibo.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 wow fadeInRight animated" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <i class="pe-7s-diskette"></i>
+                            <h3>50% экономия на мобильной SIM-карте Tchibo</h3>
+                            <p>Все держатели карт клиентов Tchibo получают 50% скидку на разовую стоимость SIM-карты в Интернете или в магазине.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="logo-section">
+            <div class="container">
+                <div class="row">
+                    <img src="images/half_classic_png (1).png" width="100" height="100">
+                </div>
+            </div>
+        </section>
+        <section class="offer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 wow fadeInDown animated ">
+                        <h1>Каждый 11-й кофе на нас!</h1>
+                        <h2>Активируйте свою личную карточку с маркой кофе и собирайте цифровую марку кофе в своей учетной записи Tchibo-Card с каждым кофе, который вы заказываете в наших филиалах с кофейной. 
+                        За 10 марок кофе вы получите свой любимый кофе бесплатно!</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gold-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="titie-section-1 wow fadeInDown animated ">
+                            <h1>Tchibo-Card Gold</h1>
+                            <h2>Спасибо за особенно лояльных клиентов.</h2>
+                            <img src="images/image.jpg">
+                            <br>
+                            <h3>Хотите еще больше преимуществ?</h3>
+                            <h4>Вы собрали 1800 бобов лояльности в течение календарного года? Тогда вы автоматически станете клиентом Tchibo-Card Gold и сможете рассчитывать на дополнительные преимущества:</h4>
+                            <ul>
+                                <li>- Бесплатная чашка кофе в день при совершении покупок в вашем филиале в кафе-баре</li>
+                                <li>- Нет снижения лояльности</li>
+                                <li>- Всегда удивительные преимущества</li>
+                                <li>- Эксклюзивная горячая линия для заказа и обслуживания</li>
+                                <li>- Персональный сервис электронной почты для ваших вопросов и запросов</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gold-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="titie-section-1 wow fadeInDown animated ">
+                            <h1>Tchibo-Card Plus</h1>
+                            <h2>Ваша кредитная карта постоянно без годовой платы.</h2>
+                            <img src="images/half_classic.jpg" width="500" height="250">
+                            <br>
+                            <h3>TchiboCard с функцией кредитной карты</h3>
+                            <h4>С TchiboCard Plus вы всегда имеете при себе свою кредитную карту. Идеальное сочетание преимуществ TchiboCard и кредитной карты.</h4>
+                            <ul>
+                                <li>- Кредитная карта и TchiboCard в одном</li>
+                                <li>- Собирайте дополнительные бобы лояльности каждый раз, когда вы ходите по магазинам</li>
+                                <li>- Нет снижения лояльности</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="logo-section">
+            <div class="container">
+                <div class="row">
+                    <img src="images/half_classic_png.png" width="100" height="100">
+                </div>
+            </div>
+        </section>
+        <section class="review-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="titie-section wow fadeInDown animated ">
+                            <h1>Покупайте с Tchibo-Card!</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="feedback" class="carousel slide feedback" data-ride="feedback">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="images/_DSC1997.jpg" width="320" height="439" alt="">
+                                <div class="carousel-caption">
+                                    <p>Преимущества при покупке каждой чашки кофе</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/_DSC2994.jpg" width="320" height="439" alt="">
+                                <div class="carousel-caption">
+                                    <p>Скидки и акции владельцам карт в каждый праздник</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/_DSC4183.jpg" width="320" height="439" alt="">
+                                <div class="carousel-caption">
+                                    <p>5% скидка на любой вид кофе</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/_DSC2346.jpg" width="320" height="439" alt="">
+                                <div class="carousel-caption">
+                                    <p>10% скидка - одежда для всей семьи</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/_DSC4216.jpg" width="320" height="439" alt="">
+                                <div class="carousel-caption">
+                                    <p>Большой ассортимент для всей семьи</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/_DSC4164.jpg" width="320" height="439" alt="">
+                                <div class="carousel-caption">
+                                    <p>Капсулы любимого кофе в подарок при покупке одной упаковки</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/_DSC4120.jpg" width="320" height="439" alt="">
+                                <div class="carousel-caption">
+                                    <p>Кофе на любой вкус - варите самостоятельно с удовольствием</p>
+                                </div>
+                            </div>
+                            <ol class="carousel-indicators review-controlar">
+                                <li data-target="#feedback" data-slide-to="0" class="active">
+                                    <img src="images/_DSC1997.jpg" alt="">
+                                </li>
+                                <li data-target="#feedback" data-slide-to="1">
+                                    <img src="images/_DSC2994.jpg" alt="">
+                                </li>
+                                <li data-target="#feedback" data-slide-to="2">
+                                    <img src="images/_DSC4183.jpg" alt="">
+                                </li>
+                                <li data-target="#feedback" data-slide-to="3">
+                                    <img src="images/_DSC2346.jpg" alt="">
+                                </li>
+                                <li data-target="#feedback" data-slide-to="4">
+                                    <img src="images/_DSC4216.jpg" alt="">
+                                </li>
+                                <li data-target="#feedback" data-slide-to="5">
+                                    <img src="images/_DSC4164.jpg" alt="">
+                                </li>
+                                <li data-target="#feedback" data-slide-to="6">
+                                    <img src="images/_DSC4120.jpg" alt="">
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="titie-section wow fadeInDown animated ">
+                            <h1>Больше иформации</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" >
+                    <div class="col-sm-4 wow fadeInDown animated" data-wow-delay="0.2s">
+                        <div class="blog-item">
+                            <a href="#"><img src="images/image_classic (1).jpg" width="350" height="262" alt=""></a>
+                            <h3>У вас есть еще вопросы? Свяжитесь с нами</h3>
+                            <p>Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt</p>
+                            <a href="#">Узнать больше</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 wow fadeInDown animated" data-wow-delay="0.4s">
+                        <div class="blog-item">
+                            <a href="#"><img src="images/image (1).jpg" width="350" height="262" alt=""></a>
+                            <h3> Как оформить свою карту? </h3>
+                            <p>Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt</p>
+                            <a href="#">Узнать больше</a>
 
-</body>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 wow fadeInDown animated" data-wow-delay="0.6s">
+                        <div class="blog-item">
+                            <a href="#"><img src="images/image_classic.jpg" width="350" height="262" alt=""></a>
+                            <h3>Получайте уведомления о новых акциях и скидках</h3>
+                            <p>Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt</p>
+                            <a href="#">Узнать больше</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="titie-section wow fadeInDown animated ">
+                            <h1>Свяжитесь с нами через Tchibo-Card</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 wow fadeInLeft animated">
+                        <div class="left-content">
+                            <h1>Отслеживайте ваши скидки по карте онлайн!</h3>
+                            <br>
+                            <p>Tchibo создает личные профили из ваших покупок и поведения использования для лучшего согласования рекламы и веб- запросов, связанных с вашими личными интересами.</p>
+                            <div class="contact-info">
+                                <p><b>Адрес</b> Боконбаева 120, Бишкек</p>
+                                <p><b>Телефон:</b> 996-555155155</p>
+                                <p><b>Почта:</b> info@tchibo.kg</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 wow fadeInRight animated">
+                        <form action="" method="" class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="name" placeholder="Ваше Имя">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="name" placeholder="Ваш Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="input-group">
+                                        <textarea name="" id="" class="form-control" cols="30" rows="5" placeholder="Ваше сообщение..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="input-group">
+                                        <input type="submit" class="contact-submit" value="Отправить" />
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/isotope.pkgd.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
 </html>
